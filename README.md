@@ -20,11 +20,9 @@ lean to write makefiles
 	y = $(x) bar
 
 	x = xyz
-	
-	在上例中，y的值将会是 xyz bar ，而不是 foo bar 。
 ```
-
- 2.  `:=`
+	在上例中，y的值将会是 xyz bar ，而不是 foo bar 。
+2.  `:=`
  
  	`:=`表示变量的值决定于它在makefile中的位置，而不是整个makefile展开后的最终值。
 ```
@@ -34,5 +32,4 @@ lean to write makefiles
 
 	x := xyz
 ```
-
 	在上例中，y的值将会是 foo bar ，而不是 xyz bar 了。
